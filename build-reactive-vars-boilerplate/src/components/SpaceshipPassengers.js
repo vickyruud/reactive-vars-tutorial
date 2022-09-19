@@ -28,20 +28,14 @@ export default function SpaceshipPassengers() {
   }
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, 100px)",
-        gap: 20,
-      }}
-    >
+    <div className="grid grid-cols-fill-auto gap-1">
       {passengers.map((charId) => {
         const character = data.characters.results.find(
           (char) => char.id === charId
         );
         return (
           <div key={character.id} className="avatar">
-            <div className="rounded-[50%] border-4 border-teal-600 ">
+            <div className="rounded-[50%] border-4 border-teal-600 h-32 ">
               <img src={character.image} />
             </div>
           </div>

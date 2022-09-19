@@ -5,20 +5,11 @@ export default function CharacterCard({ character }) {
   return (
     <div
       key={character.id}
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 12,
-        border: "2px solid #80acbb",
-      }}
+      className="flex flex-col p-[12px] border-[2px] border-teal-400"
     >
       <div className="avatar">
         <div className="rounded-xl">
-          <img
-            src={character.image}
-            alt={character.name}
-            style={{ width: "100%" }}
-          />
+          <img className="w-full" src={character.image} alt={character.name} />
         </div>
       </div>
 
@@ -27,8 +18,7 @@ export default function CharacterCard({ character }) {
         <h3>{character.species}</h3>
       </div>
       <button
-        className="btn btn-primary rounded-full bg-teal-700"
-        style={{ marginTop: "auto" }}
+        className="btn btn-primary rounded-full bg-teal-700 mt-auto"
         onClick={() => {
           const currentPassengers = spaceshipPassengersVar();
           spaceshipPassengersVar(

@@ -28,13 +28,7 @@ export default function CharacterGrid() {
   }
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-        gap: 20,
-      }}
-    >
+    <div className="grid grid-cols-fill-auto gap-[20px]">
       {data.characters.results.map((character) => (
         <CharacterCard key={character.id} character={character} />
       ))}
