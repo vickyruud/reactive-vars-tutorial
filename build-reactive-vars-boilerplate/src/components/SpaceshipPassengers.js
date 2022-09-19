@@ -27,18 +27,6 @@ export default function SpaceshipPassengers() {
     return <div>{error.message}</div>;
   }
 
-  // const {
-  //   characters: { results },
-  // } = data;
-
-  // const passengers = results.filter(
-  //   (character) => character.isSpaceshipPassenger
-  // );
-
-  // if (!passengers.length) {
-  //   return <p>No passengers. Add someone to your spaceship.</p>;
-  // }
-
   return (
     <div
       style={{
