@@ -21,7 +21,6 @@ export default function CharacterCard({ character }) {
         <h2>{character.name}</h2>
         <h3>{character.species}</h3>
       </div>
-      {/* STEP 1 */}
       <button
         style={{ marginTop: "auto" }}
         onClick={() => {
