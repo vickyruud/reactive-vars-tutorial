@@ -40,15 +40,11 @@ export default function SpaceshipPassengers() {
           (char) => char.id === charId
         );
         return (
-          <img
-            key={character.id}
-            src={character.image}
-            style={{
-              width: "100%",
-              borderRadius: "50%",
-              border: "5px solid #318bbe",
-            }}
-          />
+          <div key={character.id} className="avatar">
+            <div className="rounded-[50%] border-4 border-teal-600 ">
+              <img src={character.image} />
+            </div>
+          </div>
         );
       })}
     </div>
